@@ -14,7 +14,7 @@ public class MemberApplication {
         SpringApplication app =new SpringApplication(MemberApplication.class);
         ConfigurableEnvironment env = app.run(args).getEnvironment();
         Log.info("启动成功！");
-        Log.info("地址:\t http://127.0.0.1:{}",env.getProperty("server.port"));
+        Log.info("地址:\t http://127.0.0.1:{}{}/hello",env.getProperty("server.port"),env.getProperty("server.servlet.context-path"));
     }
 
 }
