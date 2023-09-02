@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration
+        PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN"
+        "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd">
+
+<generatorConfiguration>
+    <context id="Mysql" targetRuntime="MyBatis3" defaultModelType="flat">
+
+        <!-- 自动检查关键字，为关键字增加反引号 -->
+        <property name="autoDelimitKeywords" value="true"/>
+        <property name="beginningDelimiter" value="`"/>
+        <property name="endingDelimiter" value="`"/>
+
+        <!--覆盖生成XML文件-->
+        <plugin type="org.mybatis.generator.plugins.UnmergeableXmlMappersPlugin" />
+        <!-- 生成的实体类添加toString()方法 -->
+        <plugin type="org.mybatis.generator.plugins.ToStringPlugin"/>
+
+        <!-- 不生成注释 -->
+        <commentGenerator>
+            <property name="suppressAllComments" value="true"/>
+        </commentGenerator>
+
+        <!-- 配置数据源，需要根据自己的项目修改 -->
+        <jdbcConnection driverClass="com.mysql.cj.jdbc.Driver"
+                        connectionURL="jdbc:mysql://rm-uf62v90x7t5hukv5dro.mysql.rds.aliyuncs.com/train_business?serverTimezone=Asia/Shanghai"
+                        userId="train_business"
+                        password="Business123">
+        </jdbcConnection>
+
+        <!-- domain类的位置 targetProject是相对pom.xml的路径-->
+        <javaModelGenerator targetProject="../business/src/main/java"
+                            targetPackage="com.jiawa.train.business.domain"/>
+
+        <!-- mapper xml的位置 targetProject是相对pom.xml的路径 -->
+        <sqlMapGenerator targetProject="../business/src/main/resources"
+                         targetPackage="mapper"/>
+
+        <!-- mapper类的位置 targetProject是相对pom.xml的路径 -->
+        <javaClientGenerator targetProject="../business/src/main/java"
+                             targetPackage="com.jiawa.train.business.mapper"
+                             type="XMLMAPPER"/>
+
+        <!--<table tableName="station" domainObjectName="Station"/>-->
+        <!--<table tableName="train" domainObjectName="Train"/>-->
+        <!--<table tableName="train_station" domainObjectName="TrainStation"/>-->
+        <!--<table tableName="train_carriage" domainObjectName="TrainCarriage"/>-->
+        <!--<table tableName="train_seat" domainObjectName="TrainSeat"/>-->
+        <!--<table tableName="daily_train" domainObjectName="DailyTrain"/>-->
+        <!--<table tableName="daily_train_station" domainObjectName="DailyTrainStation"/>-->
+        <!--<table tableName="daily_train_carriage" domainObjectName="DailyTrainCarriage"/>-->
+        <!--<table tableName="daily_train_seat" domainObjectName="DailyTrainSeat"/>-->
+        <!--<table tableName="daily_train_ticket" domainObjectName="DailyTrainTicket"/>-->
+        <table tableName="confirm_order" domainObjectName="ConfirmOrder"/>
+    </context>
+</generatorConfiguration>
