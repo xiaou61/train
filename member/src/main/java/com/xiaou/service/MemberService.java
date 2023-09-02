@@ -4,6 +4,7 @@ import cn.hutool.core.collection.CollUtil;
 import com.xiaou.domain.Member;
 import com.xiaou.domain.MemberExample;
 import com.xiaou.mapper.MemberMapper;
+import com.xiaou.req.MemberRegisterReq;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -18,7 +19,8 @@ public class MemberService {
         return Math.toIntExact(memberMapper.countByExample(null));
     }
 
-    public long register(String mobile){
+    public long register(MemberRegisterReq req){
+        String mobile = req.getMobile();
         MemberExample memberExample = new MemberExample();
         memberExample.createCriteria().andMobileEqualTo(mobile);
         List<Member> list = memberMapper.selectByExample(memberExample);
