@@ -1,6 +1,16 @@
 GET http://localhost:8000/member/member/count
 Accept: application/json
 
+
 <> 2023-09-01T104318.200.json
+###
+POST http://localhost:8000/member/member/register
+Content-Type: application/x-www-form-urlencoded
+
+mobile=123456
+###
+
+
+
 
 ###
