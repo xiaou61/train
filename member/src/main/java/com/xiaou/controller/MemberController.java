@@ -4,6 +4,7 @@ import com.xiaou.req.MemberRegisterReq;
 import com.xiaou.resp.CommonResp;
 import com.xiaou.service.MemberService;
 import jakarta.annotation.Resource;
+import jakarta.validation.Valid;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -20,7 +21,7 @@ public class MemberController {
         return new CommonResp<>(count);
     }
     @PostMapping("/register")
-    public CommonResp register(MemberRegisterReq req){
+    public CommonResp register(@Valid MemberRegisterReq req){
         long register = memberService.register(req);
         return new CommonResp(register);
     }
