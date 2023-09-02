@@ -281,3 +281,7 @@ Identify and stop the process that's listening on port 8000 or configure this ap
 2023-09-02 11:04:38.860 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 2.694 seconds (process running for 3.256)
 2023-09-02 11:04:38.865 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
 2023-09-02 11:04:38.865 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-02 11:14:03.710 WARN  reactor.netty.http.server.HttpServerOperations    :299  [32m                  [0;39m [1a45f18b, L:/127.0.0.1:8000 - R:/127.0.0.1:53637] Decoding failed: REQUEST(decodeResult: failure(java.lang.IllegalArgumentException: a header name can only contain "token" characters, but found invalid character 0x3d at index 6 of header 'mobile=123'.), version: HTTP/1.1)
+POST /member/member/register HTTP/1.1
+2023-09-02 11:14:56.495 WARN  reactor.netty.http.server.HttpServerOperations    :299  [32m                  [0;39m [12e396f2, L:/127.0.0.1:8000 - R:/127.0.0.1:53652] Decoding failed: REQUEST(decodeResult: failure(java.lang.IllegalArgumentException: a header name can only contain "token" characters, but found invalid character 0x3d at index 6 of header 'mobile=123456'.), version: HTTP/1.1)
+POST /member/member/register HTTP/1.1
