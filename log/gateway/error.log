@@ -1,0 +1,33 @@
+2023-09-02 09:35:41.454 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Binding to target org.springframework.boot.context.properties.bind.BindException: Failed to bind properties under 'spring.cloud.gateway' to org.springframework.cloud.gateway.config.GatewayProperties failed:
+
+    Property: spring.cloud.gateway.routes[0].uri
+    Value: "null"
+    Reason: 不能为null
+
+
+Action:
+
+Update your application's configuration
+
+2023-09-02 09:43:43.674 ERROR o.s.b.diagnostics.LoggingFailureAnalysisReporter  :40   [32m                  [0;39m 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8000 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8000 or configure this application to listen on another port.
+
