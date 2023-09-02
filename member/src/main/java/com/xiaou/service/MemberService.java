@@ -3,6 +3,8 @@ package com.xiaou.service;
 import cn.hutool.core.collection.CollUtil;
 import com.xiaou.domain.Member;
 import com.xiaou.domain.MemberExample;
+import com.xiaou.exception.BusinessException;
+import com.xiaou.exception.BusinessExceptionEnum;
 import com.xiaou.mapper.MemberMapper;
 import com.xiaou.req.MemberRegisterReq;
 import jakarta.annotation.Resource;
@@ -26,8 +28,7 @@ public class MemberService {
         List<Member> list = memberMapper.selectByExample(memberExample);
 
         if (CollUtil.isNotEmpty(list)){
-//            return list.get(0).getId();
-            throw new RuntimeException("手机号已注册");
+            throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_EXIST);
         }
 
 
