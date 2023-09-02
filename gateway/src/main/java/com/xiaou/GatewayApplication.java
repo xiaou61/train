@@ -7,14 +7,14 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.core.env.ConfigurableEnvironment;
 
 @SpringBootApplication
-public class MemberApplication {
+public class GatewayApplication {
     //调试日志
-    private final static Logger Log = LoggerFactory.getLogger(MemberApplication.class);
+    private final static Logger Log = LoggerFactory.getLogger(GatewayApplication.class);
     public static void main(String[] args) {
-        SpringApplication app =new SpringApplication(MemberApplication.class);
+        SpringApplication app =new SpringApplication(GatewayApplication.class);
         ConfigurableEnvironment env = app.run(args).getEnvironment();
         Log.info("启动成功！");
-        Log.info("测试地址:\t http://127.0.0.1:{}{}/hello",env.getProperty("server.port"),env.getProperty("server.servlet.context-path"));
+        Log.info("网关地址:\t http://127.0.0.1:{}/hello",env.getProperty("server.port"));
     }
 
 }
