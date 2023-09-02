@@ -16,6 +16,7 @@
     <description>train</description>
     <modules>
         <module>member</module>
+        <module>common</module>
     </modules>
     <properties>
         <java.version>17</java.version>
@@ -62,7 +63,14 @@
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
+            <dependency>
+                <groupId>com.xiaou</groupId>
+                <artifactId>common</artifactId>
+                <version>0.0.1-SNAPSHOT</version>
+            </dependency>
         </dependencies>
+
+
     </dependencyManagement>
 
     <build>
