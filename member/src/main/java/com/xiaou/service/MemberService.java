@@ -7,6 +7,7 @@ import com.xiaou.exception.BusinessException;
 import com.xiaou.exception.BusinessExceptionEnum;
 import com.xiaou.mapper.MemberMapper;
 import com.xiaou.req.MemberRegisterReq;
+import com.xiaou.util.SnowUtil;
 import jakarta.annotation.Resource;
 import org.springframework.stereotype.Service;
 
@@ -33,7 +34,7 @@ public class MemberService {
 
 
         Member member = new Member();
-        member.setId(System.currentTimeMillis());
+        member.setId(SnowUtil.getSnowflakeNextId());
         member.setMobile(mobile);
         memberMapper.insert(member);
         return member.getId();
