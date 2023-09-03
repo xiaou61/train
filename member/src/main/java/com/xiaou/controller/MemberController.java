@@ -1,8 +1,10 @@
 package com.xiaou.controller;
 
+import com.xiaou.req.MemberLoginReq;
 import com.xiaou.req.MemberRegisterReq;
 import com.xiaou.req.MemberSendCodeReq;
 import com.xiaou.resp.CommonResp;
+import com.xiaou.resp.MemberLoginResp;
 import com.xiaou.service.MemberService;
 import jakarta.annotation.Resource;
 import jakarta.validation.Valid;
@@ -30,5 +32,10 @@ public class MemberController {
     public CommonResp sendCode(@Valid MemberSendCodeReq req){
        memberService.sendCode(req);
        return new CommonResp<>();
+    }
+    @PostMapping("/login")
+    public CommonResp<MemberLoginResp> sendCode(@Valid MemberLoginReq req){
+        MemberLoginResp resp = memberService.login(req);
+        return new CommonResp<>(resp);
     }
 }
