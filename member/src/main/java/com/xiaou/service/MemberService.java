@@ -49,28 +49,31 @@ public class MemberService {
     }
 
 
-    public void sendCode(MemberSendCodeReq req){
+    public void sendCode(MemberSendCodeReq req) {
         String mobile = req.getMobile();
         Member memberDB = selectMember(mobile);
 
-        //如果手机号不存在，则插入记录
-        if (ObjectUtil.isNull(memberDB)){
+        // 如果手机号不存在，则插入一条记录
+        if (ObjectUtil.isNull(memberDB)) {
             Log.info("手机号不存在，插入一条记录");
             Member member = new Member();
-            memberDB.setId(SnowUtil.getSnowflakeNextId());
-            memberDB.setMobile(mobile);
+            member.setId(SnowUtil.getSnowflakeNextId());
+            member.setMobile(mobile);
             memberMapper.insert(member);
-        }else {
-            Log.info("手机号存在,不插入记录");
+        } else {
+            Log.info("手机号存在，不插入记录");
         }
 
-        //生成验证码
-//        String code = RandomUtil.randomString(4);
+        // 生成验证码
+        // String code = RandomUtil.randomString(4);
         String code = "8888";
-        Log.info("生成短信验证码：{}",code);
-        //保存短信记录表：手机号 短信验证码 有效期 是否已使用 业务类型 发送时间 使用时间
+        Log.info("生成短信验证码：{}", code);
 
-        //对接短信通道，发送短信
+        // 保存短信记录表：手机号，短信验证码，有效期，是否已使用，业务类型，发送时间，使用时间
+        Log.info("保存短信记录表");
+
+        // 对接短信通道，发送短信
+        Log.info("对接短信通道");
     }
 
     public MemberLoginResp login(MemberLoginReq req){
@@ -93,8 +96,7 @@ public class MemberService {
     private Member selectMember(String mobile) {
         MemberExample memberExample = new MemberExample();
         memberExample.createCriteria().andMobileEqualTo(mobile);
-        List<Member> list = memberMapper.selectByExample(memberExample);
-        //如果手机号不存在，则插入记录
+        List<Member> list = memberMapper.selectByExample(memberExample);  //如果手机号不存在，则插入记录
         if (CollUtil.isEmpty(list)){
            return null;
         }else {

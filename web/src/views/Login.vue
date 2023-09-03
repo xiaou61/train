@@ -1,7 +1,7 @@
 <template>
   <a-row class="login">
     <a-col :span="8" :offset="8" class="login-main">
-      <h1 style="text-align: center"><rocket-two-tone />&nbsp;xiaou12306售票系统</h1>
+      <h1 style="text-align: center"><rocket-two-tone />&nbsp;甲蛙12306售票系统</h1>
       <a-form
           :model="loginForm"
           name="basic"
@@ -55,7 +55,7 @@ export default defineComponent({
     });
 
     const sendCode = () => {
-      axios.post("/member/member/send-code", {
+      axios.post("http://localhost:8000/member/member/send-code", {
         mobile: loginForm.mobile
       }).then(response => {
         let data = response.data;
@@ -69,7 +69,7 @@ export default defineComponent({
     };
 
     const login = () => {
-      axios.post("/member/member/login", loginForm).then((response) => {
+      axios.post("http://localhost:8000/member/member/login", loginForm).then((response) => {
         let data = response.data;
         if (data.success) {
           notification.success({ description: '登录成功！' });

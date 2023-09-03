@@ -11,15 +11,20 @@ mobile=17713088
 ###
 
 POST http://localhost:8000/member/member/send-code
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
-mobile=17713088352
+{
+  "mobile":"13000000000"
+}
 
 
 
 ###
 
 POST http://localhost:8000/member/member/login
-Content-Type: application/x-www-form-urlencoded
+Content-Type: application/json
 
-mobile=17713088352&code=8888
+{
+  "mobile": "17713088356",
+  "code": "8888"
+}
