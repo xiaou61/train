@@ -1,6 +1,7 @@
 package com.xiaou.controller;
 
 import com.xiaou.req.MemberRegisterReq;
+import com.xiaou.req.MemberSendCodeReq;
 import com.xiaou.resp.CommonResp;
 import com.xiaou.service.MemberService;
 import jakarta.annotation.Resource;
@@ -21,8 +22,13 @@ public class MemberController {
         return new CommonResp<>(count);
     }
     @PostMapping("/register")
-    public CommonResp register(@Valid MemberRegisterReq req){
+    public CommonResp<Long> register(@Valid MemberRegisterReq req){
         long register = memberService.register(req);
-        return new CommonResp(register);
+        return new CommonResp<>(register);
+    }
+    @PostMapping("/send-code")
+    public CommonResp sendCode(@Valid MemberSendCodeReq req){
+       memberService.sendCode(req);
+       return new CommonResp<>();
     }
 }
