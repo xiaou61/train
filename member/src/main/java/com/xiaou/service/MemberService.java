@@ -13,6 +13,7 @@ import com.xiaou.req.MemberLoginReq;
 import com.xiaou.req.MemberRegisterReq;
 import com.xiaou.req.MemberSendCodeReq;
 import com.xiaou.resp.MemberLoginResp;
+import com.xiaou.util.JwtUtil;
 import com.xiaou.util.SnowUtil;
 import jakarta.annotation.Resource;
 import org.slf4j.Logger;
@@ -81,7 +82,7 @@ public class MemberService {
         String code = req.getCode();
         Member memberDB = selectMember(mobile);
         //如果手机号不存在，则插入记录
-        if (ObjectUtil.isNull(memberDB)){
+        if (ObjectUtil.isNull(memberDB)) {
             throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_NOT_EXIST);
         }
 
@@ -90,16 +91,24 @@ public class MemberService {
             throw new BusinessException(BusinessExceptionEnum.MEMBER_MOBILE_CODE_ERROR);
         }
 
-        return BeanUtil.copyProperties(memberDB,MemberLoginResp.class);
+
+        MemberLoginResp memberLoginResp = BeanUtil.copyProperties(memberDB, MemberLoginResp.class);
+
+
+        String token = JwtUtil.createToken(memberLoginResp.getId(),memberLoginResp.getMobile());
+
+        memberLoginResp.setToken(token);
+
+        return memberLoginResp;
     }
 
     private Member selectMember(String mobile) {
         MemberExample memberExample = new MemberExample();
         memberExample.createCriteria().andMobileEqualTo(mobile);
-        List<Member> list = memberMapper.selectByExample(memberExample);  //如果手机号不存在，则插入记录
-        if (CollUtil.isEmpty(list)){
-           return null;
-        }else {
+        List<Member> list = memberMapper.selectByExample(memberExample);
+        if (CollUtil.isEmpty(list)) {
+            return null;
+        } else {
             return list.get(0);
         }
     }
