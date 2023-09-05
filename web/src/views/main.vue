@@ -12,7 +12,7 @@
         <a-layout-content
             :style="{ background: '#fff', padding: '24px', margin: 0, minHeight: '280px' }"
         >
-          Content
+
         </a-layout-content>
       </a-layout>
     </a-layout>
@@ -23,6 +23,9 @@ import {UserOutlined, LaptopOutlined, NotificationOutlined} from '@ant-design/ic
 import {defineComponent, ref} from 'vue';
 import TheHeaderView from "@/components/the-header.vue";
 import TheSiderView from "@/components/the-sider.vue";
+import axios from "axios";
+import {notification} from "ant-design-vue/es";
+
 
 export default defineComponent({
   components: {
