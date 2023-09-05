@@ -23,3 +23,115 @@
 2023-09-05 07:54:11.765 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 2.241 seconds (process running for 2.763)
 2023-09-05 07:54:11.767 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
 2023-09-05 07:54:11.768 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-05 08:19:45.669 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
+2023-09-05 08:19:45.707 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 5932 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-05 08:19:45.707 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-05 08:19:45.747 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-05 08:19:45.747 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-05 08:19:46.260 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-05 08:19:47.019 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-05 08:19:47.019 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-05 08:19:47.019 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-05 08:19:47.019 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-05 08:19:47.020 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-05 08:19:47.020 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-05 08:19:47.020 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-05 08:19:47.020 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-05 08:19:47.020 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-05 08:19:47.020 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-05 08:19:47.021 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-05 08:19:47.021 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-05 08:19:47.021 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-05 08:19:47.021 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-05 08:19:47.176 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-09-05 08:19:47.520 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-05 08:19:47.799 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 2.576 seconds (process running for 3.035)
+2023-09-05 08:19:47.802 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-05 08:19:47.802 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-05 08:28:37.458 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:28:37.459 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:28:37.459 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:28:54.121 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:28:54.122 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:28:54.122 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:28:56.195 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:28:56.195 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:28:56.195 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:29:04.078 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
+2023-09-05 08:29:05.298 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-09-05 08:29:05.764 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:29:05.764 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTM4NzM3NDUsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5Mzk2MDE0NSwiaWF0IjoxNjkzODczNzQ1fQ.Ay6aIKoeDCsNab0bX_UuLJIP_41eZWo_Q97TJvv9u30
+2023-09-05 08:29:06.168 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
+2023-09-05 08:29:06.169 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
+2023-09-05 08:29:08.310 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:29:08.310 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTM4NzM3NDUsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5Mzk2MDE0NSwiaWF0IjoxNjkzODczNzQ1fQ.Ay6aIKoeDCsNab0bX_UuLJIP_41eZWo_Q97TJvv9u30
+2023-09-05 08:29:08.311 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
+2023-09-05 08:29:08.311 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
+2023-09-05 08:29:11.255 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:29:11.255 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:29:11.255 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:29:38.124 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:29:38.124 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:29:38.124 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:29:41.567 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:29:41.568 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:29:41.568 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:30:52.567 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:30:52.568 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:30:52.568 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:30:52.595 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:30:52.595 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:30:52.596 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:30:53.465 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:30:53.465 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:30:53.465 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:32:01.902 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:32:01.903 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:32:01.903 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:32:02.009 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:32:02.010 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:32:02.010 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:32:26.299 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:32:26.299 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:32:26.299 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:32:26.309 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:32:26.309 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:32:26.309 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:32:28.389 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:32:28.390 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:32:28.390 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:34:04.914 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:34:04.915 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:34:04.915 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:34:04.931 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:34:04.931 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:34:04.931 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:34:06.418 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:34:06.418 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:34:06.419 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:34:26.006 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:34:26.006 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:34:26.006 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:34:26.640 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:34:26.640 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:34:26.640 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:34:33.452 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:34:33.452 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:34:33.452 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:34:33.898 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:34:33.898 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:34:33.898 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:34:33.960 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:34:33.960 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:34:33.960 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:34:45.380 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:34:45.380 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:34:45.381 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:35:29.343 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:35:29.344 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:35:29.344 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:37:49.283 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/member/count
+2023-09-05 08:37:49.284 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-05 08:37:49.284 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-05 08:40:04.181 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
+2023-09-05 08:40:04.584 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
