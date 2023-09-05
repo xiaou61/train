@@ -135,3 +135,7 @@
 2023-09-05 08:37:49.284 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
 2023-09-05 08:40:04.181 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
 2023-09-05 08:40:04.584 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-09-05 08:55:24.016 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
+2023-09-05 08:55:24.367 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-09-05 08:55:52.250 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
+2023-09-05 08:55:52.579 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
