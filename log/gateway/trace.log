@@ -32,3 +32,29 @@
 2023-09-06 08:13:31.233 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member
 2023-09-06 08:13:31.233 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
 2023-09-06 08:13:31.233 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-06 08:15:56.268 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
+2023-09-06 08:15:56.295 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 08:15:56.295 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 08:15:56.326 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-06 08:15:56.327 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-06 08:15:56.742 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 08:15:57.296 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 08:15:57.297 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 08:15:57.298 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 08:15:57.298 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 08:15:57.298 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 08:15:57.417 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 08:15:57.744 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 08:15:58.067 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 2.241 seconds (process running for 2.773)
+2023-09-06 08:15:58.069 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 08:15:58.070 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 08:19:59.848 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/hello

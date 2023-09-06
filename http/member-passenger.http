@@ -1,6 +1,7 @@
 
 POST http://localhost:8001/member/passenger/save
 Content-Type: application/json
+token:{{token}}
 
 {
   "memberId":"1",
