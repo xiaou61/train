@@ -14,6 +14,7 @@ public class PassengerService {
     @Resource
     private PassengerMapper passengerMapper;
 
+
     public void save(PassengerSaveReq req){
         DateTime now = DateTime.now();
         Passenger passenger = BeanUtil.copyProperties(req, Passenger.class);

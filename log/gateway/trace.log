@@ -26,3 +26,9 @@
 2023-09-06 08:10:06.519 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
 2023-09-06 08:10:06.519 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
 2023-09-06 08:10:06.520 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-06 08:13:27.892 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/login
+2023-09-06 08:13:27.892 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-06 08:13:27.892 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-06 08:13:31.233 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member
+2023-09-06 08:13:31.233 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-06 08:13:31.233 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
