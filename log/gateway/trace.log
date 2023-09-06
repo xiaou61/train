@@ -58,3 +58,257 @@
 2023-09-06 08:15:58.069 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
 2023-09-06 08:15:58.070 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
 2023-09-06 08:19:59.848 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/hello
+2023-09-06 08:22:58.993 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/login
+2023-09-06 08:22:58.994 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-06 08:22:58.994 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-06 08:23:03.498 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/hello
+2023-09-06 08:23:14.564 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/login
+2023-09-06 08:23:14.564 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-06 08:23:14.564 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-06 08:23:34.444 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/login
+2023-09-06 08:23:34.444 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
+2023-09-06 08:23:34.444 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
+2023-09-06 08:23:42.893 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
+2023-09-06 08:23:43.721 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-09-06 08:24:51.244 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-09-06 08:27:56.128 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
+2023-09-06 09:50:44.833 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-09-06 09:50:45.058 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:50:45.058 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:50:45.151 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:50:45.356 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:50:45.357 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:50:45.357 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:50:45.357 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:50:45.357 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:50:45.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:50:45.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:50:45.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:50:45.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:50:45.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:50:45.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:50:45.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:50:45.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:50:45.359 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:50:45.393 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:50:45.572 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:50:45.888 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 1.018 seconds (process running for 5690.594)
+2023-09-06 09:50:45.890 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:50:45.890 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:50:45.890 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 09:50:46.816 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-09-06 09:50:47.002 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:50:47.003 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:50:47.075 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:50:47.272 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:50:47.273 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:50:47.273 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:50:47.273 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:50:47.273 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:50:47.292 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:50:47.462 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:50:47.749 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 0.901 seconds (process running for 5692.454)
+2023-09-06 09:50:47.750 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:50:47.750 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:50:47.750 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 09:50:54.816 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-09-06 09:50:55.023 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:50:55.023 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:50:55.104 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:50:55.300 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:50:55.301 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:50:55.319 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:50:55.491 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:50:55.802 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 0.957 seconds (process running for 5700.507)
+2023-09-06 09:50:55.803 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:50:55.803 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:50:55.803 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 09:50:56.757 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-09-06 09:50:56.957 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:50:56.957 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:50:57.030 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:50:57.227 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:50:57.227 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:50:57.227 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:50:57.228 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:50:57.254 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:50:57.440 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:50:57.733 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 0.945 seconds (process running for 5702.439)
+2023-09-06 09:50:57.734 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:50:57.734 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:50:57.734 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 09:51:01.743 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-09-06 09:51:01.939 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:51:01.940 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:51:02.006 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:51:02.197 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:51:02.197 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:51:02.197 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:51:02.198 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:51:02.217 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:51:02.387 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:51:02.680 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 0.911 seconds (process running for 5707.387)
+2023-09-06 09:51:02.681 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:51:02.682 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:51:02.682 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 09:51:03.643 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-09-06 09:51:03.823 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:51:03.824 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:51:03.887 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:51:04.101 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:51:04.119 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:51:04.296 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:51:04.596 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 0.926 seconds (process running for 5709.302)
+2023-09-06 09:51:04.597 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:51:04.597 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:51:04.598 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 09:51:21.844 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-06 09:51:22.070 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:51:22.070 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:51:22.151 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:51:22.354 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:51:22.354 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:51:22.354 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:51:22.354 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:51:22.354 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:51:22.354 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:51:22.355 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:51:22.357 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:51:22.357 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:51:22.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:51:22.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:51:22.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:51:22.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:51:22.358 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:51:22.377 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:51:22.546 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:51:22.855 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 0.981 seconds (process running for 5727.561)
+2023-09-06 09:51:22.856 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:51:22.856 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:51:22.857 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 09:51:32.950 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 1 deletion, 0 modifications)
+2023-09-06 09:51:33.156 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:51:33.156 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:51:33.219 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:51:33.422 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:51:33.441 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:51:33.615 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:51:33.925 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 0.944 seconds (process running for 5738.631)
+2023-09-06 09:51:33.926 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:51:33.927 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:51:33.927 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 09:51:34.871 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (1 addition, 0 deletions, 0 modifications)
+2023-09-06 09:51:35.088 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:51:35.088 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:51:35.151 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:51:35.346 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:51:35.347 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:51:35.367 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:51:35.568 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:51:35.893 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 0.977 seconds (process running for 5740.598)
+2023-09-06 09:51:35.893 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:51:35.894 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:51:35.894 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-06 09:52:08.653 INFO  o.s.b.d.a.LocalDevToolsAutoConfiguration$RestartingClassPathChangeChangedEventListener:211  [32m                  [0;39m Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-09-06 09:52:08.858 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 22168 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-06 09:52:08.858 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-06 09:52:08.943 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-06 09:52:09.201 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-06 09:52:09.221 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
+2023-09-06 09:52:09.405 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-06 09:52:09.777 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 1.101 seconds (process running for 5774.482)
+2023-09-06 09:52:09.778 INFO  o.s.b.d.a.ConditionEvaluationDeltaLoggingListener :63   [32m                  [0;39m Condition evaluation unchanged
+2023-09-06 09:52:09.778 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-06 09:52:09.779 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
