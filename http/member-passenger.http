@@ -11,6 +11,6 @@ token:{{token}}
 
 ###
 
-GET http://localhost:8001/member/passenger/query-list
+GET http://localhost:8001/member/passenger/query-list?page=1&size=3
 Content-Type: application/json
 token:{{token}}
