@@ -1,227 +1,25 @@
-2023-09-07 07:41:52.454 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
-2023-09-07 07:41:52.478 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 32812 (E:\train\gateway\target\classes started by Lenovo in E:\train)
-2023-09-07 07:41:52.480 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-09-07 07:41:52.515 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-09-07 07:41:52.515 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-09-07 07:41:52.978 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
-2023-09-07 07:41:53.592 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-09-07 07:41:53.592 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-09-07 07:41:53.592 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-09-07 07:41:53.592 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-09-07 07:41:53.592 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-09-07 07:41:53.592 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-09-07 07:41:53.592 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-09-07 07:41:53.593 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-09-07 07:41:53.593 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-09-07 07:41:53.593 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-09-07 07:41:53.593 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-09-07 07:41:53.593 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-09-07 07:41:53.593 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-09-07 07:41:53.594 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-09-07 07:41:53.712 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
-2023-09-07 07:41:54.059 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
-2023-09-07 07:41:54.404 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 2.505 seconds (process running for 3.054)
-2023-09-07 07:41:54.406 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
-2023-09-07 07:41:54.406 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
-2023-09-07 07:51:11.156 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
-2023-09-07 07:51:11.370 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 07:51:12.179 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
-2023-09-07 07:51:13.645 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 07:51:15.356 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 07:51:15.357 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDQyNzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDEzMDY3MywiaWF0IjoxNjk0MDQ0MjczfQ.NCcG_TStxw6FKwkkPXwnMTxFyuq9pFFSptzbRM7_INU
-2023-09-07 07:51:15.799 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 07:51:15.800 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 07:51:28.907 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-07 07:51:28.908 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDQyNzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDEzMDY3MywiaWF0IjoxNjk0MDQ0MjczfQ.NCcG_TStxw6FKwkkPXwnMTxFyuq9pFFSptzbRM7_INU
-2023-09-07 07:51:28.908 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 07:51:28.908 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 07:53:32.456 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 07:53:32.457 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDQyNzMsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDEzMDY3MywiaWF0IjoxNjk0MDQ0MjczfQ.NCcG_TStxw6FKwkkPXwnMTxFyuq9pFFSptzbRM7_INU
-2023-09-07 07:53:32.457 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 07:53:32.458 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 07:55:03.001 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
-2023-09-07 07:55:03.594 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 07:55:53.465 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
-2023-09-07 07:55:53.893 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 07:58:08.990 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
-2023-09-07 07:58:09.361 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 08:05:53.414 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-07 08:05:53.414 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDQ2ODksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDEzMTA4OSwiaWF0IjoxNjk0MDQ0Njg5fQ.POxwe1k4Hdth4EuLBlcDgP-0KNyTcN08IOxGOCT5OGk
-2023-09-07 08:05:53.415 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 08:05:53.415 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 08:05:56.920 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-07 08:05:56.920 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDQ2ODksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDEzMTA4OSwiaWF0IjoxNjk0MDQ0Njg5fQ.POxwe1k4Hdth4EuLBlcDgP-0KNyTcN08IOxGOCT5OGk
-2023-09-07 08:05:56.920 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 08:05:56.920 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 08:06:09.700 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-07 08:06:09.700 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDQ2ODksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDEzMTA4OSwiaWF0IjoxNjk0MDQ0Njg5fQ.POxwe1k4Hdth4EuLBlcDgP-0KNyTcN08IOxGOCT5OGk
-2023-09-07 08:06:09.701 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 08:06:09.701 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 08:07:00.707 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-07 08:07:00.707 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDQ2ODksIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDEzMTA4OSwiaWF0IjoxNjk0MDQ0Njg5fQ.POxwe1k4Hdth4EuLBlcDgP-0KNyTcN08IOxGOCT5OGk
-2023-09-07 08:07:00.707 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 08:07:00.707 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 08:54:49.993 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 08:55:10.990 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 08:55:10.991 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDgwOTAsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNDQ5MCwiaWF0IjoxNjk0MDQ4MDkwfQ.8i17rKfdC0YmgWldZ7ZCmrIurhkXpsnFrtg-BF-CnoI
-2023-09-07 08:55:10.992 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 08:55:10.992 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 08:55:29.139 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
-2023-09-07 08:55:29.165 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 37292 (E:\train\gateway\target\classes started by Lenovo in E:\train)
-2023-09-07 08:55:29.166 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-09-07 08:55:29.195 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-09-07 08:55:29.196 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-09-07 08:55:29.627 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
-2023-09-07 08:55:30.221 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-09-07 08:55:30.222 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-09-07 08:55:30.222 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-09-07 08:55:30.222 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-09-07 08:55:30.222 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-09-07 08:55:30.222 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-09-07 08:55:30.222 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-09-07 08:55:30.222 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-09-07 08:55:30.223 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-09-07 08:55:30.223 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-09-07 08:55:30.223 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-09-07 08:55:30.223 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-09-07 08:55:30.223 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-09-07 08:55:30.223 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-09-07 08:55:30.337 WARN  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :62   [32m                  [0;39m Unable to start LiveReload server
-2023-09-07 08:55:30.685 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
-2023-09-07 08:55:31.004 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 2.313 seconds (process running for 2.839)
-2023-09-07 08:55:31.007 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
-2023-09-07 08:55:31.007 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
-2023-09-07 08:55:35.169 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 08:55:39.687 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 08:55:39.688 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDgxMzUsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNDUzNSwiaWF0IjoxNjk0MDQ4MTM1fQ.4GWuLX0_De226K4ahNo3nr6CFvkYMyJNVkD4vZB6a-4
-2023-09-07 08:55:40.100 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 08:55:40.100 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 08:57:13.260 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/queryList
-2023-09-07 08:57:13.261 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDgxMzUsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNDUzNSwiaWF0IjoxNjk0MDQ4MTM1fQ.4GWuLX0_De226K4ahNo3nr6CFvkYMyJNVkD4vZB6a-4
-2023-09-07 08:57:13.261 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 08:57:13.261 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 08:57:27.030 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 08:57:27.030 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDgxMzUsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNDUzNSwiaWF0IjoxNjk0MDQ4MTM1fQ.4GWuLX0_De226K4ahNo3nr6CFvkYMyJNVkD4vZB6a-4
-2023-09-07 08:57:27.031 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 08:57:27.031 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 09:00:47.633 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-07 09:00:47.634 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDgxMzUsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNDUzNSwiaWF0IjoxNjk0MDQ4MTM1fQ.4GWuLX0_De226K4ahNo3nr6CFvkYMyJNVkD4vZB6a-4
-2023-09-07 09:00:47.634 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 09:00:47.634 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 09:01:14.704 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 09:01:14.704 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
-2023-09-07 09:01:14.704 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
-2023-09-07 09:01:33.234 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 09:01:33.235 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
-2023-09-07 09:01:33.235 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
-2023-09-07 09:01:36.231 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger
-2023-09-07 09:01:36.232 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
-2023-09-07 09:01:36.232 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
-2023-09-07 09:01:38.922 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member
-2023-09-07 09:01:38.923 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
-2023-09-07 09:01:38.923 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
-2023-09-07 09:01:58.059 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 09:01:58.060 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
-2023-09-07 09:01:58.060 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
-2023-09-07 09:02:02.395 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 09:02:02.395 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
-2023-09-07 09:02:02.395 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
-2023-09-07 09:02:03.386 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 09:02:03.387 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
-2023-09-07 09:02:03.387 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
-2023-09-07 09:02:13.177 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 09:02:13.177 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDgxMzUsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNDUzNSwiaWF0IjoxNjk0MDQ4MTM1fQ.4GWuLX0_De226K4ahNo3nr6CFvkYMyJNVkD4vZB6a-4
-2023-09-07 09:02:13.177 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 09:02:13.178 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 09:02:47.696 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 09:02:47.696 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDgxMzUsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNDUzNSwiaWF0IjoxNjk0MDQ4MTM1fQ.4GWuLX0_De226K4ahNo3nr6CFvkYMyJNVkD4vZB6a-4
-2023-09-07 09:02:47.697 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 09:02:47.697 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 09:03:17.613 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 09:03:37.639 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 09:03:54.994 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 09:03:54.994 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDg2MTcsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNTAxNywiaWF0IjoxNjk0MDQ4NjE3fQ.EbY0lkqlUKe_H2RLrGY7RrGGHwEopWgHv3ttmrvJNjc
-2023-09-07 09:03:54.994 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 09:03:54.994 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 09:04:22.198 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-07 09:04:22.198 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDg2MTcsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNTAxNywiaWF0IjoxNjk0MDQ4NjE3fQ.EbY0lkqlUKe_H2RLrGY7RrGGHwEopWgHv3ttmrvJNjc
-2023-09-07 09:04:22.198 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 09:04:22.199 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 09:05:02.761 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/querylist
-2023-09-07 09:05:02.761 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDg2MTcsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNTAxNywiaWF0IjoxNjk0MDQ4NjE3fQ.EbY0lkqlUKe_H2RLrGY7RrGGHwEopWgHv3ttmrvJNjc
-2023-09-07 09:05:02.762 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 09:05:02.762 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 09:06:16.313 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/querylist
-2023-09-07 09:06:16.313 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：null
-2023-09-07 09:06:16.313 INFO  com.xiaou.LoginMemberFilter                       :37   [32m                  [0;39m token为空，请求被拦截
-2023-09-07 09:06:46.206 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/querylist
-2023-09-07 09:06:46.206 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNDg2MTcsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDEzNTAxNywiaWF0IjoxNjk0MDQ4NjE3fQ.EbY0lkqlUKe_H2RLrGY7RrGGHwEopWgHv3ttmrvJNjc
-2023-09-07 09:06:46.206 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 09:06:46.206 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 09:11:29.360 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 13:04:49.750 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
-2023-09-07 13:04:49.782 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 40928 (E:\train\gateway\target\classes started by Lenovo in E:\train)
-2023-09-07 13:04:49.782 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-09-07 13:04:49.817 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-09-07 13:04:49.817 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-09-07 13:04:50.289 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
-2023-09-07 13:04:50.883 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-09-07 13:04:50.883 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-09-07 13:04:50.883 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-09-07 13:04:50.883 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-09-07 13:04:50.883 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-09-07 13:04:50.883 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-09-07 13:04:50.884 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-09-07 13:04:50.884 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-09-07 13:04:50.884 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-09-07 13:04:50.884 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-09-07 13:04:50.884 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-09-07 13:04:50.884 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-09-07 13:04:50.885 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-09-07 13:04:50.885 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-09-07 13:04:51.028 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-09-07 13:04:51.531 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
-2023-09-07 13:04:51.902 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 2.632 seconds (process running for 3.223)
-2023-09-07 13:04:51.904 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
-2023-09-07 13:04:51.905 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
-2023-09-07 13:06:04.910 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
-2023-09-07 13:06:05.169 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 13:06:06.202 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 13:22:23.699 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
-2023-09-07 13:22:23.738 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 34032 (E:\train\gateway\target\classes started by Lenovo in E:\train)
-2023-09-07 13:22:23.739 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-09-07 13:22:23.778 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-09-07 13:22:23.779 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-09-07 13:22:24.246 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
-2023-09-07 13:22:24.947 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-09-07 13:22:24.947 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-09-07 13:22:24.947 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-09-07 13:22:24.948 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-09-07 13:22:24.948 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-09-07 13:22:24.948 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-09-07 13:22:24.948 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-09-07 13:22:24.948 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-09-07 13:22:24.948 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-09-07 13:22:24.948 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-09-07 13:22:24.949 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-09-07 13:22:24.949 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-09-07 13:22:24.949 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-09-07 13:22:24.949 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-09-07 13:22:25.095 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-09-07 13:22:25.471 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
-2023-09-07 13:22:25.822 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 2.575 seconds (process running for 3.026)
-2023-09-07 13:22:25.825 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
-2023-09-07 13:22:25.825 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
-2023-09-07 13:22:35.526 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-07 13:22:57.716 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-07 13:22:57.717 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNjQxNTYsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDE1MDU1NiwiaWF0IjoxNjk0MDY0MTU2fQ.2-Ayb9snwg9S3VSz1rQH7adj50-GGA71TcMsMo5PkfA
-2023-09-07 13:22:58.134 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 13:22:58.134 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 13:23:02.102 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-07 13:23:02.102 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNjQxNTYsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDE1MDU1NiwiaWF0IjoxNjk0MDY0MTU2fQ.2-Ayb9snwg9S3VSz1rQH7adj50-GGA71TcMsMo5PkfA
-2023-09-07 13:23:02.103 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 13:23:02.103 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-07 13:23:06.778 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-07 13:23:06.779 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQwNjQxNTYsIm1vYmlsZSI6IjE3NzEzMDg4MzUyIiwiaWQiOjE2OTgyMTE1MTAxNzU3OTcyNDgsImV4cCI6MTY5NDE1MDU1NiwiaWF0IjoxNjk0MDY0MTU2fQ.2-Ayb9snwg9S3VSz1rQH7adj50-GGA71TcMsMo5PkfA
-2023-09-07 13:23:06.779 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-07 13:23:06.779 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
+2023-09-11 14:11:37.245 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
+2023-09-11 14:11:37.293 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 36704 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-11 14:11:37.294 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-11 14:11:37.360 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-11 14:11:37.360 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-11 14:11:38.049 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-11 14:11:39.457 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-11 14:11:39.459 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-11 14:11:39.459 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-11 14:11:39.459 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-11 14:11:39.459 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-11 14:11:39.460 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-11 14:11:39.460 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-11 14:11:39.460 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-11 14:11:39.730 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-09-11 14:11:40.276 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-11 14:11:40.762 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 4.156 seconds (process running for 4.861)
+2023-09-11 14:11:40.765 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-11 14:11:40.766 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
