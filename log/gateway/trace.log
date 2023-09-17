@@ -1,277 +1,132 @@
-2023-09-11 14:11:37.245 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
-2023-09-11 14:11:37.293 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 36704 (E:\train\gateway\target\classes started by Lenovo in E:\train)
-2023-09-11 14:11:37.294 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
-2023-09-11 14:11:37.360 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-09-11 14:11:37.360 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-09-11 14:11:38.049 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
-2023-09-11 14:11:39.457 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
-2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
-2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
-2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
-2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
-2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
-2023-09-11 14:11:39.458 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
-2023-09-11 14:11:39.459 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
-2023-09-11 14:11:39.459 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
-2023-09-11 14:11:39.459 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
-2023-09-11 14:11:39.459 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
-2023-09-11 14:11:39.460 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
-2023-09-11 14:11:39.460 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
-2023-09-11 14:11:39.460 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
-2023-09-11 14:11:39.730 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
-2023-09-11 14:11:40.276 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
-2023-09-11 14:11:40.762 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 4.156 seconds (process running for 4.861)
-2023-09-11 14:11:40.765 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
-2023-09-11 14:11:40.766 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
-2023-09-11 14:11:56.546 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
-2023-09-11 14:11:57.172 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/send-code
-2023-09-11 14:11:57.827 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-11 14:12:23.159 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:12:23.160 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:12:23.629 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:12:23.629 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:12:25.213 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:12:25.214 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:12:25.214 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:12:25.214 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:12:26.323 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:12:26.323 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:12:26.324 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:12:26.324 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:18:03.357 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:18:03.357 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:18:03.358 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:18:03.358 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:18:06.310 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:18:06.310 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:18:06.310 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:18:06.311 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:18:07.944 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:18:07.945 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:18:07.945 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:18:07.945 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:19:56.624 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:19:56.625 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:19:56.625 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:19:56.626 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:21:06.463 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:21:06.463 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:21:06.463 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:21:06.464 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:24:17.777 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:24:17.777 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:24:17.777 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:24:17.777 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:24:27.619 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:24:27.619 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:24:27.619 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:24:27.619 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:25:23.011 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:25:23.011 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:25:23.011 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:25:23.012 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:25:30.089 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:25:30.090 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:25:30.090 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:25:30.090 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:26:38.018 INFO  com.xiaou.LoginMemberFilter                       :28   [32m                  [0;39m 不需要登录验证：/member/member/login
-2023-09-11 14:27:22.540 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:27:22.540 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:27:22.541 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:27:22.541 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:27:28.859 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:27:28.859 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:27:28.859 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:27:28.860 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:28:19.871 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:28:19.871 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:28:19.872 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:28:19.872 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:28:33.721 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-11 14:28:33.721 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:28:33.722 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:28:33.722 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:28:36.556 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:28:36.557 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:28:36.557 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:28:36.557 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:29:26.996 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:29:26.996 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:29:26.996 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:29:26.996 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:30:11.548 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:30:11.548 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:30:11.549 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:30:11.549 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:30:23.825 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-11 14:30:23.826 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:30:23.826 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:30:23.826 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:30:26.039 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:30:26.039 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:30:26.039 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:30:26.039 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:31:28.032 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:31:28.032 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:31:28.032 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:31:28.032 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:32:40.102 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:32:40.102 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:32:40.102 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:32:40.102 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:33:56.345 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:33:56.345 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:33:56.345 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:33:56.346 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:34:41.036 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:34:41.036 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:34:41.037 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:34:41.037 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:35:59.872 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:35:59.872 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:35:59.873 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:35:59.873 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:36:01.057 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:36:01.058 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:36:01.058 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:36:01.058 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:36:01.682 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:36:01.682 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:36:01.682 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:36:01.682 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:37:14.238 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:37:14.238 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:37:14.239 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:37:14.239 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:37:33.229 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:37:33.229 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:37:33.229 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:37:33.229 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:38:15.429 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:38:15.429 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:38:15.430 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:38:15.430 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:39:23.090 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:39:23.090 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:39:23.090 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:39:23.092 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:39:25.296 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:39:25.296 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:39:25.296 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:39:25.296 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:39:26.747 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:39:26.747 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:39:26.748 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:39:26.748 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:39:27.777 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:39:27.777 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:39:27.777 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:39:27.777 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:39:30.374 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:39:30.374 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:39:30.374 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:39:30.374 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:39:31.278 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:39:31.279 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:39:31.279 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:39:31.279 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:39:34.220 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:39:34.220 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:39:34.221 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:39:34.221 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:39:35.098 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:39:35.098 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:39:35.098 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:39:35.098 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:40:29.180 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:40:29.180 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:40:29.181 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:40:29.181 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:41:40.386 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:41:40.387 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:41:40.387 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:41:40.387 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:42:02.960 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:42:02.960 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:42:02.961 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:42:02.961 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:42:04.712 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:42:04.712 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:42:04.712 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:42:04.713 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:42:05.341 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:42:05.341 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:42:05.342 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:42:05.342 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:42:05.797 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:42:05.797 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:42:05.797 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:42:05.797 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:42:20.084 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-11 14:42:20.085 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:42:20.085 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:42:20.085 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:42:23.881 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:42:23.881 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:42:23.882 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:42:23.882 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:44:41.061 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:44:41.061 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:44:41.062 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:44:41.062 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:11.926 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:11.926 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:11.927 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:11.927 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:13.896 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:13.896 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:13.897 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:13.897 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:15.205 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:15.206 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:15.206 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:15.206 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:27.362 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
-2023-09-11 14:45:27.362 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:27.362 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:27.362 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:27.407 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:27.408 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:27.408 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:27.408 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:30.861 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:30.862 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:30.862 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:30.862 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:32.084 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:32.084 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:32.084 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:32.084 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:32.740 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:32.741 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:32.741 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:32.741 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:33.229 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:33.230 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:33.230 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:33.230 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:33.957 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:33.957 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:33.957 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:33.958 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:35.300 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:35.301 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:35.301 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:35.301 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:35.638 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:35.638 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:35.638 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:35.638 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:36.108 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:36.109 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:36.109 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:36.109 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
-2023-09-11 14:45:36.544 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/query-list
-2023-09-11 14:45:36.544 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJuYmYiOjE2OTQ0MTI3MTcsIm1vYmlsZSI6IjEzMDAwMDAwMDAwIiwiaWQiOjE2OTgyMjg5MDU3NDEyNTg3NTIsImV4cCI6MTY5NDQ5OTExNywiaWF0IjoxNjk0NDEyNzE3fQ.GN1IaFqFz3mTfMh8-RPXDcFPwAwm8jcFA9QQTc1T21g
-2023-09-11 14:45:36.544 INFO  com.xiaou.util.JwtUtil                            :46   [32m                  [0;39m JWT token校验结果：true
-2023-09-11 14:45:36.544 INFO  com.xiaou.LoginMemberFilter                       :45   [32m                  [0;39m token有效，放行该请求
+2023-09-17 13:07:46.683 INFO  org.hibernate.validator.internal.util.Version     :21   [32m                  [0;39m HV000001: Hibernate Validator 8.0.1.Final
+2023-09-17 13:07:46.717 INFO  com.xiaou.GatewayApplication                      :51   [32m                  [0;39m Starting GatewayApplication using Java 17.0.5 with PID 6796 (E:\train\gateway\target\classes started by Lenovo in E:\train)
+2023-09-17 13:07:46.718 INFO  com.xiaou.GatewayApplication                      :632  [32m                  [0;39m No active profile set, falling back to 1 default profile: "default"
+2023-09-17 13:07:46.754 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-09-17 13:07:46.754 INFO  o.s.b.d.env.DevToolsPropertyDefaultsPostProcessor :250  [32m                  [0;39m For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-09-17 13:07:47.339 INFO  o.springframework.cloud.context.scope.GenericScope:282  [32m                  [0;39m BeanFactory id=2d63daf2-242e-3dcb-882c-1d29eb009621
+2023-09-17 13:07:47.995 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [After]
+2023-09-17 13:07:47.996 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Before]
+2023-09-17 13:07:47.996 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Between]
+2023-09-17 13:07:47.996 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Cookie]
+2023-09-17 13:07:47.996 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Header]
+2023-09-17 13:07:47.996 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Host]
+2023-09-17 13:07:47.996 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Method]
+2023-09-17 13:07:47.996 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Path]
+2023-09-17 13:07:47.996 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Query]
+2023-09-17 13:07:47.996 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [ReadBody]
+2023-09-17 13:07:47.997 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [RemoteAddr]
+2023-09-17 13:07:47.997 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [XForwardedRemoteAddr]
+2023-09-17 13:07:47.997 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [Weight]
+2023-09-17 13:07:47.997 INFO  o.s.c.gateway.route.RouteDefinitionRouteLocator   :88   [32m                  [0;39m Loaded RoutePredicateFactory [CloudFoundryRouteService]
+2023-09-17 13:07:48.117 INFO  o.s.b.d.autoconfigure.OptionalLiveReloadServer    :59   [32m                  [0;39m LiveReload server is running on port 35729
+2023-09-17 13:07:48.546 INFO  o.s.boot.web.embedded.netty.NettyWebServer        :111  [32m                  [0;39m Netty started on port 8000
+2023-09-17 13:07:49.044 INFO  com.xiaou.GatewayApplication                      :57   [32m                  [0;39m Started GatewayApplication in 2.921 seconds (process running for 3.578)
+2023-09-17 13:07:49.048 INFO  com.xiaou.GatewayApplication                      :16   [32m                  [0;39m 启动成功！
+2023-09-17 13:07:49.048 INFO  com.xiaou.GatewayApplication                      :17   [32m                  [0;39m 网关地址:	 http://127.0.0.1:8000
+2023-09-17 13:08:03.981 INFO  com.xiaou.LoginMemberFilter                       :31   [32m                  [0;39m 需要登录验证：/member/passenger/save
+2023-09-17 13:08:03.982 INFO  com.xiaou.LoginMemberFilter                       :35   [32m                  [0;39m 会员登录验证开始，token：{{token}}
+2023-09-17 13:08:03.999 ERROR com.xiaou.util.JwtUtil                            :49   [32m                  [0;39m JWT token 校验异常
+cn.hutool.jwt.JWTException: The token was expected 3 parts, but got 1.
+	at cn.hutool.jwt.JWT.splitToken(JWT.java:392)
+	at cn.hutool.jwt.JWT.parse(JWT.java:95)
+	at cn.hutool.jwt.JWT.<init>(JWT.java:85)
+	at cn.hutool.jwt.JWT.of(JWT.java:66)
+	at cn.hutool.jwt.JWTUtil.parseToken(JWTUtil.java:73)
+	at com.xiaou.util.JwtUtil.validate(JwtUtil.java:43)
+	at com.xiaou.LoginMemberFilter.filter(LoginMemberFilter.java:43)
+	at org.springframework.cloud.gateway.handler.FilteringWebHandler$GatewayFilterAdapter.filter(FilteringWebHandler.java:137)
+	at org.springframework.cloud.gateway.filter.OrderedGatewayFilter.filter(OrderedGatewayFilter.java:44)
+	at org.springframework.cloud.gateway.handler.FilteringWebHandler$DefaultGatewayFilterChain.lambda$filter$0(FilteringWebHandler.java:117)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:45)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4495)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4495)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:165)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:258)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.FluxSwitchIfEmpty$SwitchIfEmptySubscriber.onNext(FluxSwitchIfEmpty.java:74)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.onNext(MonoFlatMap.java:158)
+	at reactor.core.publisher.FluxMap$MapSubscriber.onNext(FluxMap.java:122)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onNext(MonoNext.java:82)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.innerNext(FluxConcatMapNoPrefetch.java:258)
+	at reactor.core.publisher.FluxConcatMap$ConcatMapInner.onNext(FluxConcatMap.java:863)
+	at reactor.core.publisher.FluxOnErrorResume$ResumeSubscriber.onNext(FluxOnErrorResume.java:79)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.onNext(MonoPeekTerminal.java:180)
+	at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.onNext(MonoFilterWhen.java:136)
+	at reactor.core.publisher.Operators$ScalarSubscription.request(Operators.java:2545)
+	at reactor.core.publisher.MonoFilterWhen$MonoFilterWhenMain.request(MonoFilterWhen.java:182)
+	at reactor.core.publisher.MonoPeekTerminal$MonoTerminalPeekSubscriber.request(MonoPeekTerminal.java:139)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2305)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2305)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:338)
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108)
+	at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+	at reactor.core.publisher.MonoFlatMap$FlatMapMain.request(MonoFlatMap.java:194)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2305)
+	at reactor.core.publisher.FluxMap$MapSubscriber.request(FluxMap.java:164)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.request(Operators.java:2305)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.request(FluxConcatMapNoPrefetch.java:338)
+	at reactor.core.publisher.MonoNext$NextSubscriber.request(MonoNext.java:108)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.set(Operators.java:2341)
+	at reactor.core.publisher.Operators$MultiSubscriptionSubscriber.onSubscribe(Operators.java:2215)
+	at reactor.core.publisher.MonoNext$NextSubscriber.onSubscribe(MonoNext.java:70)
+	at reactor.core.publisher.FluxConcatMapNoPrefetch$FluxConcatMapNoPrefetchSubscriber.onSubscribe(FluxConcatMapNoPrefetch.java:164)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:201)
+	at reactor.core.publisher.FluxIterable.subscribe(FluxIterable.java:83)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDefer.subscribe(MonoDefer.java:53)
+	at reactor.core.publisher.Mono.subscribe(Mono.java:4495)
+	at reactor.core.publisher.MonoIgnoreThen$ThenIgnoreMain.subscribeNext(MonoIgnoreThen.java:263)
+	at reactor.core.publisher.MonoIgnoreThen.subscribe(MonoIgnoreThen.java:51)
+	at reactor.core.publisher.InternalMonoOperator.subscribe(InternalMonoOperator.java:64)
+	at reactor.core.publisher.MonoDeferContextual.subscribe(MonoDeferContextual.java:55)
+	at reactor.netty.http.server.HttpServer$HttpServerHandle.onStateChange(HttpServer.java:1052)
+	at reactor.netty.ReactorNetty$CompositeConnectionObserver.onStateChange(ReactorNetty.java:710)
+	at reactor.netty.transport.ServerTransport$ChildObserver.onStateChange(ServerTransport.java:481)
+	at reactor.netty.http.server.HttpServerOperations.onInboundNext(HttpServerOperations.java:647)
+	at reactor.netty.channel.ChannelOperationsHandler.channelRead(ChannelOperationsHandler.java:114)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at reactor.netty.http.server.HttpTrafficHandler.channelRead(HttpTrafficHandler.java:238)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:333)
+	at io.netty.handler.codec.ByteToMessageDecoder.callDecode(ByteToMessageDecoder.java:454)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:290)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:833)
+2023-09-17 13:08:04.003 WARN  com.xiaou.LoginMemberFilter                       :48   [32m                  [0;39m token无效，请求被拦截

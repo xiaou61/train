@@ -31,11 +31,19 @@ private final static Logger Log = LoggerFactory.getLogger(PassengerService.class
     public void save(PassengerSaveReq req){
         DateTime now = DateTime.now();
         Passenger passenger = BeanUtil.copyProperties(req, Passenger.class);
-        passenger.setMemberId(LoginMemberContext.getId());
-        passenger.setId(SnowUtil.getSnowflakeNextId());
-        passenger.setCreateTime(now);
-        passenger.setUpdateTime(now);
-        passengerMapper.insert(passenger);
+        if (ObjectUtil.isNull(passenger.getId())){
+            passenger.setMemberId(LoginMemberContext.getId());
+            passenger.setId(SnowUtil.getSnowflakeNextId());
+            passenger.setCreateTime(now);
+            passenger.setUpdateTime(now);
+            passengerMapper.insert(passenger);
+        }else {
+            //新增编辑时间
+            passenger.setUpdateTime(now);
+            //如果不是空 应该去更新
+            passengerMapper.updateByPrimaryKey(passenger);
+        }
+
     }
     public PageResp<PassengerQueryResp> queryList(PassengerQueryReq req){
 
